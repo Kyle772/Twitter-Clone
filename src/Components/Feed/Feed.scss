@@ -1,0 +1,28 @@
+.feedCon {
+    width: 700px;
+    background-color: white;
+    min-height: 70vh;
+    color: black;
+
+    .tabControls {
+        justify-content: space-between;
+
+        .tab {
+            width: 25%;
+            text-align: center;
+            color: white;
+            background-color: #30292F;
+            padding: 10px 30px;
+            transition: background-color 200ms ease-in-out;
+            cursor: pointer;
+
+            &.active, &:hover {
+                background-color: #413F54;
+            }
+
+            &.active {
+                font-weight: 700;
+            }
+        }
+    }
+}

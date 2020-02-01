@@ -1,0 +1,32 @@
+.feedCon {
+  width: 700px;
+  background-color: white;
+  min-height: 70vh;
+  color: black;
+}
+
+.feedCon .tabControls {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.feedCon .tabControls .tab {
+  width: 25%;
+  text-align: center;
+  color: white;
+  background-color: #30292F;
+  padding: 10px 30px;
+  -webkit-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.feedCon .tabControls .tab.active, .feedCon .tabControls .tab:hover {
+  background-color: #413F54;
+}
+
+.feedCon .tabControls .tab.active {
+  font-weight: 700;
+}
+/*# sourceMappingURL=Feed.css.map */

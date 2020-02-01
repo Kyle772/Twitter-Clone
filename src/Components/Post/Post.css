@@ -1,0 +1,73 @@
+.postCard {
+  margin-top: 30px;
+  background-color: white;
+  padding: 30px;
+  min-width: 400px;
+  max-width: 400px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.postCard textarea {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  min-height: 100px;
+  padding: 15px;
+}
+
+.postCard .controls {
+  margin-top: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.postCard .controls button {
+  background-color: #48BF84;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-weight: 700;
+  float: right;
+  margin-left: 10px;
+  -webkit-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.postCard .controls button:hover {
+  background-color: #1C7549;
+}
+
+.postCard .controls .counter {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: #48BF84;
+  position: relative;
+  margin-left: auto;
+}
+
+.postCard .controls .counter:after {
+  width: 25px;
+  height: 25px;
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.postCard .controls .counter:before {
+  width: 35px;
+  height: 35px;
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: red;
+  border-radius: 50%;
+  z-index: -1;
+}
+/*# sourceMappingURL=Post.css.map */

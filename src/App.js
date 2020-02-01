@@ -2,23 +2,29 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import Profile from './Components/Profile/Profile';
+import Post from './Components/Post/Post';
+import Feed from './Components/Feed/Feed';
+import Recommendations from './Components/Recommendation/Recommendations';
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
+      <div className="row center">
+        <div id="ProfileCon" className="col">
+          <Profile/>
+          <Post/>
+        </div>
+        <div id="FeedCon" className="col">
+          <Feed/>
+        </div>
+        <div id="RecCon" className="col">
+          <Recommendations/>
+        </div>
+      </div>
     </div>
   );
 }

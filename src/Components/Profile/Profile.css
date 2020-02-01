@@ -1,0 +1,89 @@
+.profileCard {
+  background-color: white;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+  color: black;
+  z-index: -1;
+  min-width: 400px;
+  max-width: 400px;
+}
+
+.profileCard .cover {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  max-height: 200px;
+}
+
+.profileCard .content {
+  padding: 30px;
+}
+
+.profileCard .content .photo {
+  width: 100px;
+  height: 100px;
+  margin-top: 50px;
+}
+
+.profileCard .content h2, .profileCard .content h3, .profileCard .content p {
+  margin: 0;
+  padding: 0;
+}
+
+.profileCard .content h2 {
+  margin-bottom: 1rem;
+}
+
+.profileCard .content .bio {
+  margin-bottom: 1rem;
+}
+
+.profileCard .content .row {
+  margin-top: .25rem;
+}
+
+.profileCard .content .tweetCount, .profileCard .content .tweetrtCount {
+  font-weight: 700;
+}
+
+.profileCard .content .joindate, .profileCard .content .location, .profileCard .content .tweetCount, .profileCard .content .tweetrtCount {
+  margin-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profileCard .content .tweetCount:after, .profileCard .content .tweetrtCount:after {
+  font-weight: 500;
+  content: " Tweeters";
+  margin-left: .3rem;
+  padding-top: .1rem;
+}
+
+.profileCard .content .tweetrtCount:after {
+  content: "retweets";
+}
+
+.profileCard .content .joindate:before, .profileCard .content .location:before {
+  content: "";
+  background-image: url("../../Assets/icon/calender.svg");
+  background-position: center center;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 1rem;
+  height: 1rem;
+  background-repeat: no-repeat;
+  margin-right: .3rem;
+}
+
+.profileCard .content .location:before {
+  background-image: url("../../Assets/icon/round-plus.svg");
+}
+/*# sourceMappingURL=Profile.css.map */

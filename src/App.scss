@@ -1,0 +1,35 @@
+$spacing-mult: 15px;
+
+.col {
+    display: flex;
+    flex-direction: column;
+
+    &#ProfileCon, &#FeedCon {
+        margin-right: $spacing-mult*2;
+    }
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+
+    &.center {
+        justify-content: center;
+    }
+}
+
+body {
+    background-color: #121212;
+    color: white;
+
+    header {
+        height: 75px;
+        margin-bottom: $spacing-mult;
+        display: flex;
+        justify-content: center;
+
+        img {
+            max-height: 75px;
+        }
+    }
+}
