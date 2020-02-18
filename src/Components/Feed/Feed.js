@@ -1,22 +1,25 @@
 import React from 'react';
+import TabControls from './TabControls/TabControls';
 import './Feed.css';
 
+import Screen from './Screen/Screen';
+
+
 export default class Feed extends React.Component {
-    activeSwap = (e) => {
-        const { target: { value } } = e;
+    updateScreen(screen_index, slug) {
+        console.log(screen_index);
+        console.log(slug);
     }
-    
+
     render() {
         return (
             <div className="feedCon">
-                <div className="tabControls row">
-                    <div className="active tab" onClick={this.activeSwap}>Your Feed</div>
-                    <div className="tab" onClick={this.activeSwap}>Explore</div>
-                    <div className="tab" onClick={this.activeSwap}>Global</div>
-                    <div className="tab" onClick={this.activeSwap}>Messages</div>
-                </div>
-                <div className="tweet">
-                    meow
+                <TabControls updateScreen={this.updateScreen} ></TabControls>
+                <div className="screenCon">
+                    <Screen></Screen>
+                    <Screen></Screen>
+                    <Screen></Screen>
+                    <Screen></Screen>
                 </div>
             </div>
         )
